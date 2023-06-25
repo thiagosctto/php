@@ -6,8 +6,27 @@ require_once("config.php");
 //$usuarios = $sql->select("SELECT * FROM users");
 //echo json_encode($usuarios);
 
+//carrega 1 usuario
+//$jose = new Usuario();
+//$jose->loadById(2);
+//echo $jose;
 
-$jose = new Usuario();
-$jose->loadById(2);
-echo $jose;
+//carrega uma lista de usuarios
+//$lista = Usuario::getList();
+//echo json_encode($lista);
+
+//Carrega uma lista de usuarios buscando por login
+//$search = Usuario::search("J");
+//echo json_encode($search);
+
+//Carrega um usuario com login e senha
+$usuario = new Usuario();
+$usuario->login("Tigas", "qqHouve");
+
+echo $usuario;
+
+
+
+
+
 ?>
